@@ -1,5 +1,5 @@
 # Middleware's aus der Vorlesung
-Folgende Middleware-Systeme wurden in der Vorlesung besprochen und dürfen nicht mehr in unserer Ausarbeitung vorkommen:
+Folgende Middleware-Systeme wurden in der Vorlesung besprochen und dürfen **nicht** mehr in unserer Ausarbeitung vorkommen:
 * RMI (= Remote Method Invocation)
 * SOAP (= Simple Object Access Protocol)
 * WSDL (= Web Services Description Language)
