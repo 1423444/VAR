@@ -9,7 +9,7 @@ Die Middleware stellt die Verbindung der Clients mit dem Server her.
 * xmlBlaster
 * Apache ActiveMQ
 * RabbitMQ
-### Quellen
+## Links
 * https://www.techfak.uni-bielefeld.de/~swrede/xml-isy/talks/mom-xmlblaster.pdf
 * https://de.wikipedia.org/wiki/Message_Oriented_Middleware
 * https://de.wikipedia.org/wiki/Apache_ActiveMQ
