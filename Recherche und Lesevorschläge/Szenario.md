@@ -1,4 +1,4 @@
-# Vorraussetzungen
+# Szenario
 ## Einleitung
 Unser Unternehmen heißt Contoso GmbH und wir planen eine Client- Serversoftware für die Verwaltung unserer Hardware zu schreiben. Da wir aber keine Zeit, aber viel Geld haben, planen wir den Einsatz einer Message Oriented Middleware um die Anbindung der Clients an die Server zu vereinfachen. Als Programmiersprache für Client und Server wollen wir Java verwenden.
 ## Aufbau
