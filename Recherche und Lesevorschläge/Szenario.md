@@ -18,3 +18,4 @@ Die Middleware stellt die Verbindung der Clients mit dem Server her.
 * http://www.informatik.uni-leipzig.de/~irmscher/lehre/skripte/VerteilteSystemeScriptum.pdf
 * http://de.slideshare.net/PeterREgli/mom-message-oriented-middleware
 * https://www.predic8.com/activemq-hornetq-rabbitmq-apollo-qpid-comparison.htm
+* https://entwickler.de/online/rabbitmq-zur-verteilten-bearbeitung-von-aufgaben-und-entkopplung-von-applikationsteilen-5-136604.html
