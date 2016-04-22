@@ -15,4 +15,4 @@ Die Middleware stellt die Verbindung der Clients mit dem Server her.
 * https://de.wikipedia.org/wiki/Message_Oriented_Middleware
 * https://de.wikipedia.org/wiki/Apache_ActiveMQ
 * http://www.rabbitmq.com/features.html
-*http://www.informatik.uni-leipzig.de/~irmscher/lehre/skripte/VerteilteSystemeScriptum.pdf
+* http://www.informatik.uni-leipzig.de/~irmscher/lehre/skripte/VerteilteSystemeScriptum.pdf
