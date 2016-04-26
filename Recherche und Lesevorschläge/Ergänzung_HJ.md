@@ -3,6 +3,8 @@
 * Verschieden alte Systeme in Betrieb
 * Nicht viele Rechner insgesamt
 * Daher Overhead vertretbar groß/ Vorteile überwiegen
+* Zugriff/Austausch von fertigen Produkten einzelner Arbeitsbereiche gewünscht
+* Netzwerk-ähnliche Kommunikation gewünscht
 
 ### Warum keine andere Middleware?
 
