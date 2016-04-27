@@ -8,3 +8,8 @@ entscheiden, ob der Erhalt vom Empfänger bestätigt werden muss oder nach dem �
 Damit es einen Schutz vor Ausfällen gibt, werden oft mehrere Server zusammengeschlossen und eine Art Cluster gebildet.
 Die Wahrscheinlichkeit von Verlust von Nachrichten wird hiermit deutlich verringert. 
 Es wird das AMQP Protokoll für die Kommunikation zwischen Broker, Client und Verbraucher genutzt
+
+#Quellen:
+https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html
+https://entwickler.de/online/rabbitmq-zur-verteilten-bearbeitung-von-aufgaben-und-entkopplung-von-applikationsteilen-5-136604.html
+https://www.rabbitmq.com/features.html
