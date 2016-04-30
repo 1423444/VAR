@@ -1,3 +1,5 @@
-# VAR
-
-Sammlung von Lesevorschlägen, Recherche, Zusammenfassungen und Ideen
+﻿# Verteilte Architekturen und Technologien (VAR)
+Arbeitsbereich von
+* Lucas Kneis
+* Johannes Heiler
+* Tobias Jünemann
