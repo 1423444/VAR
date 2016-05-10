@@ -6,9 +6,8 @@
  * Diese Datei gehoert zur Pflichtübung 2, 
  * Hochschule Mannheim, VAR, SS2016
  * 
- * Letztes Update: 09. Mai 2016
+ * Letztes Update: 10. Mai 2016
  */
-import java.math.*;
 import java.rmi.*;
 
 public interface ComputePiRemote extends Remote {

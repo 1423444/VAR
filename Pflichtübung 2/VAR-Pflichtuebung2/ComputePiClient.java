@@ -6,7 +6,7 @@
  * Diese Datei gehoert zur Pflichtübung 2, 
  * Hochschule Mannheim, VAR, SS2016
  * 
- * Letztes Update: 09. Mai 2016
+ * Letztes Update: 10. Mai 2016
  */
 import java.math.*;
 import java.rmi.*;
@@ -24,13 +24,15 @@ public class ComputePiClient {
 			ComputePiRemote computePiRemote = (ComputePiRemote) Naming.lookup(name);
 			Analysis analysis = computePiRemote.createStatistics(Integer.parseInt(args[1]));
 			
-			int g = analysis.getG();
-			int v = analysis.getV();
+			// Algorithmus von http://www.zum.de/Faecher/Inf/RP/Java/java_1.htm
+			BigDecimal g = new BigDecimal(analysis.getG());
+			BigDecimal v = new BigDecimal(analysis.getV());
 			
 			System.out.println("g = " + g);
 			System.out.println("v = " + v);
 			
-			BigDecimal div = new BigDecimal(v).divide(new BigDecimal(g));
+			
+			BigDecimal div = v.divide(g, 15, RoundingMode.HALF_UP);
 			BigDecimal pi = div.multiply(new BigDecimal(4));
 			
 			System.out.println("Daraus folgt PI = " + pi);
