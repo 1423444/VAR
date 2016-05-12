@@ -7,3 +7,6 @@ Nachdem das Projekt in Eclipse importiert wurde kann es über die Skripte im Pro
 * 1. Starte rmiregistry.bat
 * 2. Starte server.bat
 * 3. Starte client.bat
+
+## Version für Mac
+Prinzipiell wie oben beschrieben, noch nicht vollständig funktionsfähig. Einfach zum Ausprobieren.
