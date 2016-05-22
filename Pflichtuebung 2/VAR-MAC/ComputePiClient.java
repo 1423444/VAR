@@ -10,7 +10,7 @@ public class ComputePiClient {
         String name = "//" + args[0] + "ComputePi";
         ComputePiRemote computePiRemote = (ComputePiRemote) Naming.lookup(name);
         BigDecimal pi = computePiRemote.computePi(Integer.parseInt(args[1]));
-        pi = pi.subtract(args[0])*4;
+        pi = pi.divide(new BigDecimal(args[1])).multiply(new BigDecimal("4"));
         System.out.println(pi);
     }
     catch(Exception e){
