@@ -1,0 +1,36 @@
+# Node rules:
+## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+## Dependency directory
+## Commenting this out is preferred by some people, see
+## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# Book build output
+_book
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
+/Pflichtübung 3/HelloGoodbyeClient/nbproject/private/
+/Pflichtübung 3/HelloGoodbyeServer/nbproject/private/
+/Pflichtübung 3/HelloGoodbye Beispiel/HelloGoodbyeClient/nbproject/private/
+/Pflichtübung 3/HelloGoodbye Beispiel/HelloGoodbyeServer/nbproject/private/
+/Pflichtübung 3/HelloGoodbye Beispiel/HelloGoodbyeServer/dist/
+/Pflichtübung 3/HelloGoodbye Beispiel/HelloGoodbyeServer/build/
+/Pflichtübung 3/HelloGoodbye Beispiel/HelloGoodbyeClient/dist/
+/Pflichtübung 3/HelloGoodbye Beispiel/HelloGoodbyeClient/build/
+/Pflichtuebung 3/HelloGoodbye Beispiel/HelloGoodbyeClient/build/
+/Pflichtuebung 3/HelloGoodbye Beispiel/HelloGoodbyeClient/dist/
+/Pflichtuebung 3/HelloGoodbye Beispiel/HelloGoodbyeClient/nbproject/private/
+/Pflichtuebung 3/HelloGoodbye Beispiel/HelloGoodbyeServer/build/
+/Pflichtuebung 3/HelloGoodbye Beispiel/HelloGoodbyeServer/dist/
+/Pflichtuebung 3/HelloGoodbye Beispiel/HelloGoodbyeServer/nbproject/private/
+/Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeClient/build/
+/Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeClient/dist/
+/Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeClient/nbproject/private/
+/Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeServer/build/
+/Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeServer/dist/
+/Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeServer/nbproject/private/
