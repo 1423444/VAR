@@ -36,7 +36,9 @@ public class OfficeDistanceServer {
             } else {
                 origin = AdressMap.getAdress(origin);
                 destination = AdressMap.getAdress(destination);
-                return client.sendRequest(origin, destination);
+                String [] res = client.sendRequest(origin, destination);
+                OfficeDistanceCache.putOnCache(origin + destination, res);
+                return res;
             }
             
         }catch(Exception e){

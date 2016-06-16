@@ -15,7 +15,7 @@ import java.util.HashMap;
  */
 public class OfficeDistanceCache {
     
-    private static HashMap<String, String[]> cacheMap;
+    private static HashMap<String, String[]> cacheMap = new HashMap<String, String[]> ();
     
     public static boolean checkCache(String originAndDestination){
         return cacheMap.containsKey(originAndDestination);

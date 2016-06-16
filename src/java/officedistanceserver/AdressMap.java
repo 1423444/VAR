@@ -25,9 +25,8 @@ public class AdressMap {
         try{
             return ADRESSMAP.get(kuerzel);
         } catch(Exception e){
-            System.err.print("Location not found");
+            return "Location not found: " + e.getMessage();
         }
-        return "";
     }
     
     public static boolean Contains(String kuerzel){
