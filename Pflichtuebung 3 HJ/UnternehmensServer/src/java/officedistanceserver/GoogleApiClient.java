@@ -79,7 +79,7 @@ public class GoogleApiClient {
 
 		}
 		catch(Exception e) {
-			return new String [] {e.getMessage()};
+			return new String [] {e.getMessage(), "GoogleApiClient"};
 		}
         }
         

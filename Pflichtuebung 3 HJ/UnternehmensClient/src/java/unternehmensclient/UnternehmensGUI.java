@@ -16,32 +16,34 @@ import java.util.List;
  */
 public class UnternehmensGUI {
     
-    private static String depLocation;
-    private static String destLocation;
+    private static String depLocation = "HQ";
+    private static String destLocation = "HQ";
     private static boolean travelTime = false;
+    
     
     public static void main(String[] args){
         JFrame frame = new JFrame();
         frame.setTitle("Business Travel Planner");
-        frame.setSize(900, 900);
+        frame.setSize(900, 300);
+        JPanel panel = new JPanel();
+        panel.setBackground(Color.DARK_GRAY);
         
         JButton button = new JButton("Display Information!");
         button.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
                 List resultList = UnternehmensClient.getDistance(depLocation, destLocation);
-                String resultString = "Distance: " + (String)resultList.get(0);
+                String resultString = "Distance: " + (String)resultList.get(1);
                 if(travelTime){
-                    resultString = resultString + ", Traveltime: " + resultList.get(1);
+                    resultString = resultString + ", Traveltime: " + resultList.get(0);
                 }
                 JTextField answer = new JTextField();
                 answer.setSize(200, 200);
                 answer.setText(resultString);
-                frame.add(answer);
+                JOptionPane.showInternalMessageDialog(panel, answer);
             }
         });
         
-        JPanel panel = new JPanel();
-        panel.setBackground(Color.DARK_GRAY);
+
         
         String depList[] = {"Mannheim Headquarters", "Office Munich", "Office Hamburg","Office Berlin"};
         JComboBox depBox = new JComboBox(depList);
@@ -50,7 +52,7 @@ public class UnternehmensGUI {
                 JComboBox cb = (JComboBox)e.getSource();
                 switch ((String)cb.getSelectedItem()){
                     case "Mannheim Headquarters":
-                        depLocation = "HW";
+                        depLocation = "HQ";
                         break;
                     case "Office Munich":
                         depLocation = "OM";
@@ -61,6 +63,8 @@ public class UnternehmensGUI {
                     case "Office Berlin":
                         depLocation = "OB";
                         break;
+                    default:
+                        depLocation = "HQ";
                 }
             }
         });
@@ -72,7 +76,7 @@ public class UnternehmensGUI {
                 JComboBox cb = (JComboBox)e.getSource();
                 switch ((String)cb.getSelectedItem()){
                     case "Mannheim Headquarters":
-                        destLocation = "HW";
+                        destLocation = "HQ";
                         break;
                     case "Office Munich":
                         destLocation = "OM";
@@ -83,6 +87,8 @@ public class UnternehmensGUI {
                     case "Office Berlin":
                         destLocation = "OB";
                         break;
+                    default:
+                        depLocation ="HQ";
                 }
             }
         });

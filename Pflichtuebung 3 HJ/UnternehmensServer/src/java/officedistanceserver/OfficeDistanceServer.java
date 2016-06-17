@@ -24,7 +24,7 @@ public class OfficeDistanceServer {
         
         try{
             
-            if(!AdressMap.Contains(origin) || !AdressMap.Contains(destination)){
+            if((!AdressMap.Contains(origin)) || !(AdressMap.Contains(destination))){
                 throw new Exception ("Illegal Location Value");
             }
             
@@ -40,7 +40,7 @@ public class OfficeDistanceServer {
             }
             
         }catch(Exception e){
-            return new String[] {e.getMessage()};
+            return new String[] {e.getMessage(), "Office Distance Server"};
         }
         
     }

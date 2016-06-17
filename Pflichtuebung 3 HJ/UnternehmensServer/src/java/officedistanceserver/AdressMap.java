@@ -29,7 +29,10 @@ public class AdressMap {
         }
     }
     
-    public static boolean Contains(String kuerzel){
+    public static boolean Contains(String kuerzel)throws Exception{
+        if(!ADRESSMAP.containsKey(kuerzel)){
+            throw new Exception( "Key not Contained " + kuerzel);
+        }
         return ADRESSMAP.containsKey(kuerzel);
     }
     
