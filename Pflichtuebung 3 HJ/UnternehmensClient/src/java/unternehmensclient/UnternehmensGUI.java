@@ -18,7 +18,7 @@ public class UnternehmensGUI {
     
     private static String depLocation;
     private static String destLocation;
-    private static boolean travelTime;
+    private static boolean travelTime = false;
     
     public static void main(String[] args){
         JFrame frame = new JFrame();
@@ -29,9 +29,9 @@ public class UnternehmensGUI {
         button.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
                 List resultList = UnternehmensClient.getDistance(depLocation, destLocation);
-                String resultString = "Distance: " + (String)resultList.get(1);
+                String resultString = "Distance: " + (String)resultList.get(0);
                 if(travelTime){
-                    resultString = resultString + ", Traveltime: " + resultList.get(2);
+                    resultString = resultString + ", Traveltime: " + resultList.get(1);
                 }
                 JTextField answer = new JTextField();
                 answer.setSize(200, 200);

@@ -16,9 +16,7 @@ import javax.jws.WebParam;
 @WebService(serviceName = "OfficeDistanceServer")
 public class OfficeDistanceServer {
 
-    /**
-     * Web service operation
-     */
+
     @WebMethod(operationName = "getDistance")
     public String[] getDistance(@WebParam(name = "origin") String origin, @WebParam(name = "destination") String destination) {
         

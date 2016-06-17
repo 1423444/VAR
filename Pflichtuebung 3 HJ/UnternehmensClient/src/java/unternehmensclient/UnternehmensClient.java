@@ -19,10 +19,11 @@ public class UnternehmensClient {
     private static OfficeDistanceServer_Service service;
 
     public static java.util.List<java.lang.String> getDistance(java.lang.String origin, java.lang.String destination) {
-        // Note that the injected javax.xml.ws.Service reference as well as port objects are not thread safe.
-        // If the calling of port operations may lead to race condition some synchronization is required.
+        officedistanceserver.OfficeDistanceServer_Service service = new officedistanceserver.OfficeDistanceServer_Service();
         officedistanceserver.OfficeDistanceServer port = service.getOfficeDistanceServerPort();
         return port.getDistance(origin, destination);
     }
+
+    
     
 }

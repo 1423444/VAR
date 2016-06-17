@@ -5,13 +5,18 @@
  */
 package unternehmensclient;
 
+import java.util.List;
+
 /**
  *
  * @author heart
  */
 public class Test {
     public static void main(String[] args){
-        System.out.println(UnternehmensClient.getDistance("HQ", "OM"));
+        List eins = UnternehmensClient.getDistance("HQ", "OM");
+        System.out.println(eins.get(0));
+                System.out.println(eins.get(1));
+
     }
     
 }
