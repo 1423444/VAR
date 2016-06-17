@@ -1,6 +1,8 @@
 # Node rules:
 ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
+.project
+.idea
 
 ## Dependency directory
 ## Commenting this out is preferred by some people, see
@@ -34,3 +36,8 @@ _book
 /Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeServer/build/
 /Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeServer/dist/
 /Pflichtuebung 3 Beispiel/HelloGoodbye Beispiel/HelloGoodbyeServer/nbproject/private/
+/Pflichtuebung 3 HJ/UnternehmensServer/dist/
+/Pflichtuebung 3 HJ/UnternehmensServer/build/
+/Pflichtuebung 3 HJ/UnternehmensClient/nbproject/private/
+/Pflichtuebung 3 HJ/UnternehmensClient/build/
+/Pflichtuebung 3 HJ/UnternehmensClient/dist/
